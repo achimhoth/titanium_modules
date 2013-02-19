@@ -36,6 +36,14 @@
 		A2E88F8A141EBC8F00A41FB3 /* TiImageFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E88F88141EBC8F00A41FB3 /* TiImageFactory.m */; };
 		AA747D9F0F9514B9006C5449 /* TiImagefactory_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiImagefactory_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		CE76C40116CB36C600398060 /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = CE76C3F916CB36C600398060 /* NSString+MD5.h */; };
+		CE76C40216CB36C600398060 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76C3FA16CB36C600398060 /* NSString+MD5.m */; };
+		CE76C40316CB36C600398060 /* PDFView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE76C3FB16CB36C600398060 /* PDFView.h */; };
+		CE76C40416CB36C600398060 /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76C3FC16CB36C600398060 /* PDFView.m */; };
+		CE76C40516CB36C600398060 /* UIImage+PDF.h in Headers */ = {isa = PBXBuildFile; fileRef = CE76C3FD16CB36C600398060 /* UIImage+PDF.h */; };
+		CE76C40616CB36C600398060 /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76C3FE16CB36C600398060 /* UIImage+PDF.m */; };
+		CE76C40716CB36C600398060 /* UIView+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = CE76C3FF16CB36C600398060 /* UIView+Image.h */; };
+		CE76C40816CB36C600398060 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = CE76C40016CB36C600398060 /* UIView+Image.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +72,15 @@
 		A2E88F88141EBC8F00A41FB3 /* TiImageFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiImageFactory.m; path = Classes/TiImageFactory.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* TiImagefactory_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiImagefactory_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE76C3F816CB36C600398060 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		CE76C3F916CB36C600398060 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		CE76C3FA16CB36C600398060 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		CE76C3FB16CB36C600398060 /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		CE76C3FC16CB36C600398060 /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		CE76C3FD16CB36C600398060 /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		CE76C3FE16CB36C600398060 /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		CE76C3FF16CB36C600398060 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		CE76C40016CB36C600398060 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libTiImagefactory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiImagefactory.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +107,7 @@
 		0867D691FE84028FC02AAC07 /* imagefactory */ = {
 			isa = PBXGroup;
 			children = (
+				CE76C3F716CB36C600398060 /* UIImage+PDF */,
 				A26B53DE1420F51A00545AFF /* UIImage */,
 				08FB77AEFE84172EC02AAC07 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
@@ -143,6 +161,23 @@
 			path = Classes/UIImage;
 			sourceTree = "<group>";
 		};
+		CE76C3F716CB36C600398060 /* UIImage+PDF */ = {
+			isa = PBXGroup;
+			children = (
+				CE76C3F816CB36C600398060 /* LICENSE.txt */,
+				CE76C3F916CB36C600398060 /* NSString+MD5.h */,
+				CE76C3FA16CB36C600398060 /* NSString+MD5.m */,
+				CE76C3FB16CB36C600398060 /* PDFView.h */,
+				CE76C3FC16CB36C600398060 /* PDFView.m */,
+				CE76C3FD16CB36C600398060 /* UIImage+PDF.h */,
+				CE76C3FE16CB36C600398060 /* UIImage+PDF.m */,
+				CE76C3FF16CB36C600398060 /* UIView+Image.h */,
+				CE76C40016CB36C600398060 /* UIView+Image.m */,
+			);
+			name = "UIImage+PDF";
+			path = "Classes/UIImage+PDF";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -157,6 +192,10 @@
 				A26B53E51420F51A00545AFF /* TiUIImage+Alpha.h in Headers */,
 				A26B53E71420F51A00545AFF /* TiUIImage+Resize.h in Headers */,
 				A26B53E91420F51A00545AFF /* TiUIImage+RoundedCorner.h in Headers */,
+				CE76C40116CB36C600398060 /* NSString+MD5.h in Headers */,
+				CE76C40316CB36C600398060 /* PDFView.h in Headers */,
+				CE76C40516CB36C600398060 /* UIImage+PDF.h in Headers */,
+				CE76C40716CB36C600398060 /* UIView+Image.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +272,10 @@
 				A26B53E61420F51A00545AFF /* TiUIImage+Alpha.m in Sources */,
 				A26B53E81420F51A00545AFF /* TiUIImage+Resize.m in Sources */,
 				A26B53EA1420F51A00545AFF /* TiUIImage+RoundedCorner.m in Sources */,
+				CE76C40216CB36C600398060 /* NSString+MD5.m in Sources */,
+				CE76C40416CB36C600398060 /* PDFView.m in Sources */,
+				CE76C40616CB36C600398060 /* UIImage+PDF.m in Sources */,
+				CE76C40816CB36C600398060 /* UIView+Image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +305,11 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiImagefactory.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiImagefactory_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -274,22 +321,18 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TiImagefactory_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "TiImagefactory";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiImagefactory;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				DSTROOT = "/tmp/TiImagefactory.dst";
 			};
 			name = Debug;
 		};
@@ -297,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = (
 					armv6,
 					armv7,
@@ -306,7 +350,11 @@
 					armv7,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
+				DSTROOT = /tmp/TiImagefactory.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiImagefactory_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -318,21 +366,14 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TiImagefactory_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "TiImagefactory";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PRODUCT_NAME = TiImagefactory;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = "/tmp/TiImagefactory.dst";
 			};
 			name = Release;
 		};
@@ -351,7 +392,11 @@
 				"ARCHS[sdk=iphonesimulator*]" = i386;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiImagefactory.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiImagefactory_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -363,22 +408,18 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TiImagefactory_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "TiImagefactory";
 				OTHER_CFLAGS = (
 					"-DDEBUG",
 					"-DTI_POST_1_2",
 				);
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiImagefactory;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				DSTROOT = "/tmp/TiImagefactory.dst";
 			};
 			name = Debug;
 		};
@@ -386,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = (
 					armv6,
 					armv7,
@@ -395,7 +437,11 @@
 					armv7,
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
+				DSTROOT = /tmp/TiImagefactory.dst;
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiImagefactory_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = "";
@@ -407,21 +453,14 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TiImagefactory_Prefix.pch";
 				INSTALL_PATH = /usr/local/lib;
-				PRODUCT_NAME = "TiImagefactory";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DTI_POST_1_2";
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PRODUCT_NAME = TiImagefactory;
 				RUN_CLANG_STATIC_ANALYZER = NO;
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "";
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				DSTROOT = "/tmp/TiImagefactory.dst";
 			};
 			name = Release;
 		};

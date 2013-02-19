@@ -123,6 +123,30 @@ Creates a new image by creating a copy of the given image and applying the speci
 * Image blob[blob]: Image to compress
 * Compression Quality[float]; The quality of the resulting JPEG image, expressed as a value from 0.0 to 1.0. The value 0.0 represents the maximum compression (or lowest quality) while the value 1.0 represents the least compression (or best quality). (default: 1.0)
 
+
+### imageFromPDF
+
+Creates an image from one page of a pdf
+
+#### Arguments
+
+* Options[dictionary]: A dictionary specifying the options for the image to be created
+	* pdf[string] (required): The nativePath of the pdf file
+	* height[int]: The height of the image to be created
+	* width[int]: The width of the image to be created
+	* fit[boolean]: Will keep the aspect ratio of the original page.
+	* page[int]: The page number to create an image of. (default: 1)
+
+#### Example
+	var file = Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, "test.pdf");
+	var image = ImageFactory.imageFromPDF({
+		pdf: file.nativePath,
+		width: 100,
+		// height: 100,
+		fit: true,
+		page: 3
+	});
+
 ## Usage
 
 See example.

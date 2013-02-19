@@ -9,6 +9,7 @@
 #import "TiHost.h"
 #import "TiUtils.h"
 #import "TiImageFactory.h"
+#import "UIImage+PDF.h"
 
 @implementation TiImagefactoryModule
 
@@ -204,5 +205,41 @@ MAKE_SYSTEM_PROP(QUALITY_HIGH,kCGInterpolationHigh);
 	float compressionQuality = [TiUtils floatValue:[args objectAtIndex:kArgCompressionQuality] def:1.0];
 	return [[[TiBlob alloc] initWithData:UIImageJPEGRepresentation(image,compressionQuality) mimetype:@"image/jpeg"] autorelease];
 }
+
+-(id)imageFromPDF:(id)args
+{
+    ENSURE_SINGLE_ARG(args,NSDictionary);
+    
+    NSURL* pdfPath = [NSURL URLWithString:[TiUtils stringValue:@"pdf" properties:args]];
+    if (!pdfPath) {
+        NSLog(@"[ERROR] pdf is a required parameter");
+        return nil;
+    }
+    
+    BOOL fit = [TiUtils boolValue:@"fit" properties:args def:NO];
+    int page = [TiUtils intValue:@"page" properties:args def:1];
+    int height = [TiUtils intValue:@"height" properties:args];
+    int width = [TiUtils intValue:@"width" properties:args];
+    UIImage *img;
+    
+    if (height && width) {
+        if (fit) {
+            img = [UIImage imageWithPDFURL:pdfPath fitSize:CGSizeMake(width, height) atPage:page];
+        } else {
+            img = [UIImage imageWithPDFURL:pdfPath atSize:CGSizeMake(width, height) atPage:page];
+        }
+    } else if (height){
+        img = [UIImage imageWithPDFURL:pdfPath atHeight:height atPage:page];
+    } else if (width){
+        img = [UIImage imageWithPDFURL:pdfPath atWidth:width atPage:page];
+    } else {
+        img = [UIImage originalSizeImageWithPDFURL:pdfPath atPage:page];
+    }
+    
+    TiBlob *result = [[[TiBlob alloc] initWithImage:img] autorelease];
+    
+    return result;
+}
+
 
 @end
